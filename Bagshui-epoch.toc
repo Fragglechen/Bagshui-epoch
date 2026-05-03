@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: Bagshui-epoch
+## Notes: |cffdb4e97Feng shui for your bags|r|nAll-in-one autosorting inventory replacement for Epoch|nSpecial thanks to veechs, original Bagshui author
+## Author: Fragglechen
+## Version: 1.0.0
+## OptionalDeps: AtlasLoot, ItemRack, Outfitter, pfUI
+## SavedVariables: BagshuiData
+
+Bagshui.xml
