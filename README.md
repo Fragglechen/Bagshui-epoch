@@ -15,7 +15,7 @@
 </picture><br>
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=REDPFJ9YSQBUW">
-  <img src="Images/paypal-donate-button.png" alt="Donate with PayPal" />
+  <img src="Images/paypal-donate-button.png" alt="Donate with PayPal" width="180" />
 </a>
 
 
@@ -154,7 +154,7 @@ Use [GitAddonsManager](https://woblight.gitlab.io/overview/gitaddonsmanager/).
 <td>
 
 * **Guild Bank** right-click to deposit.
-* [`Transmog()`](collection queries.<br><sup>Requires [Tmog](https://github.com/Fragglechen/Tmog-epoch).
+* [Tmog](https://github.com/Fragglechen/Tmog-epoch).
 
 </td>
 </tr>
@@ -174,7 +174,7 @@ If Bagshui has not been localized for your client, many items will not be correc
 ## Donations
 Developing Bagshui is fun, but also a lot of work! Your support is hugely appreciated.  
 <a href="https://www.paypal.com/donate/?hosted_button_id=REDPFJ9YSQBUW">
-  <img src="Images/paypal-donate-button.png" alt="Donate with PayPal" />
+  <img src="Images/paypal-donate-button.png" alt="Donate with PayPal" width="180" />
 </a>
 
 
