@@ -14,7 +14,8 @@ function About:InitUi()
 		return
 	end
 
-	self.uiFrame = Bagshui.prototypes.Ui:CreateWindowFrame("About", nil, 295, 140, "")
+	self.uiFrame = Bagshui.prototypes.Ui:CreateWindowFrame("About", nil, 295, 190, "")
+	local donateUrlText = "https://paypal.me/Fragglechen"
 
 	local nextAnchor = self.uiFrame
 	local nextAnchorToPoint = "TOPLEFT"
@@ -68,10 +69,39 @@ function About:InitUi()
 	thanks:SetPoint("TOPLEFT", url, "BOTTOMLEFT", 0, -8)
 	thanks:SetPoint("RIGHT", self.uiFrame, "RIGHT", -25, 0)
 
+	local donateButton = Bagshui.prototypes.Ui:CreateButton("AboutDonate", self.uiFrame, "Donate", function()
+		donateUrl:SetAlpha(1)
+		donateUrl:SetFocus()
+		donateUrl:HighlightText()
+	end)
+	donateButton:SetPoint("TOPLEFT", thanks, "BOTTOMLEFT", 0, -10)
+
+	local donateUrl = Bagshui.prototypes.Ui:CreateEditBox("AboutDonateUrl", self.uiFrame, nil, nil, nil, true, true)
+	Bagshui.prototypes.Ui:SetEditBoxTextReadOnly(donateUrl, donateUrlText)
+	donateUrl:SetWidth(220)
+	donateUrl:SetHeight(16)
+	donateUrl:SetTextInsets(0, 0, 0, 0)
+	donateUrl:SetAlpha(0.5)
+	donateUrl:SetJustifyH("LEFT")
+	donateUrl:SetPoint("TOPLEFT", donateButton, "BOTTOMLEFT", 0, -6)
+	donateUrl:SetPoint("RIGHT", self.uiFrame, "RIGHT", -25, 0)
+	local donateUrlOldOnFocusGained = donateUrl:GetScript("OnEditFocusGained")
+	donateUrl:SetScript("OnEditFocusGained", function()
+		donateUrlOldOnFocusGained()
+		_G.this:SetAlpha(1)
+	end)
+	local donateUrlOldOnFocusLost = donateUrl:GetScript("OnEditFocusLost")
+	donateUrl:SetScript("OnEditFocusLost", function()
+		donateUrlOldOnFocusLost()
+		_G.this:SetAlpha(0.5)
+	end)
+
 	-- Unfocus the URL when clicking outside it.
 	self.uiFrame:SetScript("OnMouseUp", function()
 		url:HighlightText(0, 0)
 		url:ClearFocus()
+		donateUrl:HighlightText(0, 0)
+		donateUrl:ClearFocus()
 	end)
 
 end

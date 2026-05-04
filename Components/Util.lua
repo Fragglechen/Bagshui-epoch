@@ -728,7 +728,7 @@ function Util.GetFullTexturePath(path)
 		return
 	end
 	local _, slashCount = string.gsub(path, "\\", "")
-	return slashCount > 1 and path or ("Interface\\AddOns\\Bagshui\\Images\\" .. path)
+	return slashCount > 1 and path or ("Interface\\AddOns\\" .. (BS_ADDON_NAME or "Bagshui-epoch") .. "\\Images\\" .. path)
 end
 
 

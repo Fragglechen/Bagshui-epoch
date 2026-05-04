@@ -74,7 +74,9 @@ end
 local bagshuiEnvironment = {
 	-- Pull basic information into the environment.
 
-	BS_VERSION = "",  -- Intentionally empty; will be filled from Bagshui.toc by `Bagshui:AddonLoaded()`.
+	BS_ADDON_NAME = "Bagshui-epoch",
+
+	BS_VERSION = "",  -- Intentionally empty; will be filled from Bagshui-epoch.toc by `Bagshui:AddonLoaded()`.
 
 	-- Increment to wipe SavedVariables.
 	BS_DATA_VERSION = 1,
@@ -1047,7 +1049,7 @@ function Bagshui:AddonLoaded()
 	-- self:PrintDebug("Bagshui:AddonLoaded()")
 
 	-- Grab version number from TOC file.
-	self.environment.BS_VERSION = tostring(_G.GetAddOnMetadata("Bagshui", "Version"))
+	self.environment.BS_VERSION = tostring(_G.GetAddOnMetadata(BS_ADDON_NAME, "Version"))
 
 	-- Prepare game function hooks.
 	self.hooks = Bagshui.prototypes.Hooks:New(self.apiFunctionsToHook, self)
@@ -1200,7 +1202,7 @@ function Bagshui:OnEvent(event, arg1, arg2, arg3, arg4)
 
 	if event == "ADDON_LOADED" then
 		-- Need to check arg1 to avoid responding to this event for other addons.
-		if arg1 == "Bagshui" then
+		if arg1 == BS_ADDON_NAME then
 			self:AddonLoaded()
 			self:LoadComponents()
 		else
