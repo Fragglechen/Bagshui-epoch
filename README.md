@@ -1,17 +1,16 @@
-<h1>
-<img src="Images/Logo.svg" width="204" align="left" alt="Bagshui">
-<div width="100%">&nbsp;<br></div>
-</h1>
+<p align="center">
+  <img src="Images/Logo.svg" width="204" alt="Bagshui">
+</p>
 
 **Feng shui for your bags:** A Classic WOTLK WoW 3.3.5 (and Project Epoch WoW) inventory addon.<br><sup>Not for Retail; you have [so](https://www.curseforge.com/wow/addons/better-bags) [many](https://www.curseforge.com/wow/addons/ark-inventory) [options](https://www.curseforge.com/wow/search?class=addons&categories=bags-inventory&sortBy=popularity).</sup>
 
 <h4><picture>
   <source media="(prefers-color-scheme: dark)" srcset="Images/Screenshot_1.png">
-  <img alt="Bagshui Screenshot 1" src="Images/Screenshot_1.png">
+  <img alt="Bagshui Screenshot 1" src="Images/Screenshot_1.png" width="49%">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Images/Screenshot_2.png">
-  <img alt="Bagshui Screenshot 2" src="Images/Screenshot_2.png">
+  <img alt="Bagshui Screenshot 2" src="Images/Screenshot_2.png" width="49%">
 </picture><br>
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=REDPFJ9YSQBUW">
@@ -106,7 +105,7 @@ Use [GitAddonsManager](https://woblight.gitlab.io/overview/gitaddonsmanager/).
 </td>
 <td>
 
-* [OmniCC](https://felbite.com/addon/4773-omnicc/
+* [OmniCC](https://felbite.com/addon/4773-omnicc/)
 * [pfUI](https://github.com/Fragglechen/pfUI/)
 * [ShaguTweaks](https://github.com/Fragglechen/ShaguTweaks/)
 
