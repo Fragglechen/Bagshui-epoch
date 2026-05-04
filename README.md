@@ -14,21 +14,10 @@
   <img alt="Bagshui Screenshot 2" src="Images/Screenshot_2.png">
 </picture><br>
 
-<div id="donate-button-container">
-<div id="donate-button"></div>
-<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-<script>
-PayPal.Donation.Button({
-env:'production',
-hosted_button_id:'REDPFJ9YSQBUW',
-image: {
-src:'https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif',
-alt:'Donate with PayPal button',
-title:'PayPal - The safer, easier way to pay online!',
-}
-}).render('#donate-button');
-</script>
-</div>
+<a href="https://www.paypal.com/donate/?hosted_button_id=REDPFJ9YSQBUW">
+  <img src="Images/paypal-donate-button.png" alt="Donate with PayPal" />
+</a>
+
 
 
 
@@ -184,21 +173,10 @@ If Bagshui has not been localized for your client, many items will not be correc
 
 ## Donations
 Developing Bagshui is fun, but also a lot of work! Your support is hugely appreciated.  
-<div id="donate-button-container">
-<div id="donate-button"></div>
-<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-<script>
-PayPal.Donation.Button({
-env:'production',
-hosted_button_id:'REDPFJ9YSQBUW',
-image: {
-src:'https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif',
-alt:'Donate with PayPal button',
-title:'PayPal - The safer, easier way to pay online!',
-}
-}).render('#donate-button');
-</script>
-</div>
+<a href="https://www.paypal.com/donate/?hosted_button_id=REDPFJ9YSQBUW">
+  <img src="Images/paypal-donate-button.png" alt="Donate with PayPal" />
+</a>
+
 
 
 ## Credits
